@@ -12,6 +12,7 @@ bkp/
 # C#
 bin/
 obj/
+TestResults/
 
 # Compiled Java class files
 *.class

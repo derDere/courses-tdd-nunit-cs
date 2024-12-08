@@ -2,7 +2,6 @@ using NUnit.Framework;
 
 namespace HelloTests {
   public class HelloTests {
-
     [Test]
     public void Hello_ShouldReturnFriends() {
       // Act
