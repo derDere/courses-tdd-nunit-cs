@@ -2,12 +2,9 @@ using System;
 
 namespace UserServiceLibrary
 {
-    public class PersonOdataProvider
+    public interface Provider<T>
     {
-        public virtual Task<object> Get(string identifier)
-        {
-            throw new NotImplementedException("Implement me");
-        }
+        T Get(string identifier);
     }
 
     public class ProviderException : Exception
