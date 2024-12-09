@@ -1,0 +1,32 @@
+{
+	// Place your python-Arbeitsbereich snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	"NUnit unittest": {
+		"scope": "csharp",
+	 	"prefix": "nunit",
+	 	"body": [
+			"using NUnit.Framework;",
+			"",
+			"namespace Tests {",
+			"  public class $TM_FILENAME_BASE {",
+			"",
+			"    Object sut = null;",
+			"",
+			"    [SetUp]",
+			"    public void setUp() {}",
+			"",
+			"    [Test]",
+			"    public void test_init() {",		
+			"      Assert.That(sut, Is.Not.EqualTo(null));",
+			"    }",
+			"  }",
+			"}"
+	 	],
+	 	"description": "NUnit file skeleton"
+	}
+}
