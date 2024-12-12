@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using NUnit.Framework.Internal;
 using System.Collections.Generic;
 
 namespace HelloTests {
@@ -46,8 +47,22 @@ namespace HelloTests {
     }
 
     [Test]
-    [Ignore("TODO")]
+    //[Ignore("TODO")]
     public void GetObject_ShouldYieldExpectedUser() {
+      // Act
+      (string FirstName, string LastName) actual = Hello.GetObject();
+
+      // Expected
+      const string expectedFirstName = "Joey";
+      const string expectedLastName = "Ramone";
+
+      // Assert
+      Assert.AreEqual(expectedFirstName, actual.FirstName);
+      Assert.AreEqual(expectedLastName, actual.LastName);
+
+      // Assert New
+      Assert.That(actual.FirstName, Is.EqualTo(expectedFirstName));
+      Assert.That(actual.LastName, Is.EqualTo(expectedLastName));
     }
   }
 }
