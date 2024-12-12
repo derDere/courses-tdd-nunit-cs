@@ -31,7 +31,7 @@ namespace HelloTests {
     }
 
     [Test]
-    [Ignore("Test skipped, as requested in the original code")]
+    //[Ignore("Test skipped, as requested in the original code")]
     public void GetList_ShouldMatchExpectedItems() {
       // Act
       var actual = Hello.GetList();

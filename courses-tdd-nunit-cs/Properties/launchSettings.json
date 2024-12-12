@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "courses-tdd-nunit-cs": {
+      "commandName": "Project",
+      "hotReloadEnabled": true
+    }
+  }
+}
