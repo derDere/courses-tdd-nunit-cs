@@ -1,3 +1,4 @@
+using courses_tdd_nunit_cs_terminal.Properties;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
@@ -16,10 +17,7 @@ namespace PeopleLibrary
     {
         public static List<Person> GetPeople()
         {
-            var baseDirectory = AppContext.BaseDirectory;
-            var projectRoot = Path.Combine(baseDirectory, "../../../ex02-matchers");
-            var jsonFilePath = Path.Combine(projectRoot, "ppl.json");
-            var json = File.ReadAllText(jsonFilePath);
+            string json = Resources.ppl;
             return JsonSerializer.Deserialize<List<Person>>(json);
         }
     }

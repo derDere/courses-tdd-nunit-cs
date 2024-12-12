@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "courses-tdd-nunit-cs", "courses-tdd-nunit-cs\courses-tdd-nunit-cs.csproj", "{17ADFA7B-333D-45A2-942C-190C1D56BA5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "courses-tdd-nunit-cs-terminal", "courses-tdd-nunit-cs-terminal\courses-tdd-nunit-cs-terminal.csproj", "{D8F9C33A-9C8F-49E7-AD54-91417E9466A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17ADFA7B-333D-45A2-942C-190C1D56BA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17ADFA7B-333D-45A2-942C-190C1D56BA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17ADFA7B-333D-45A2-942C-190C1D56BA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17ADFA7B-333D-45A2-942C-190C1D56BA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8F9C33A-9C8F-49E7-AD54-91417E9466A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F9C33A-9C8F-49E7-AD54-91417E9466A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F9C33A-9C8F-49E7-AD54-91417E9466A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F9C33A-9C8F-49E7-AD54-91417E9466A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBEE0C82-A70F-4BC5-A3CC-EBD7ACBB67D2}
+	EndGlobalSection
+EndGlobal

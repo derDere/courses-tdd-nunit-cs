@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace HelloTests {
   public class HelloTests {
@@ -9,10 +10,14 @@ namespace HelloTests {
 
       // Assert
       Assert.AreEqual("friends", result);
+
+      // Assert New
+      Assert.That(result, Is.EqualTo("friends"));
+      Assert.That(result, Is.Not.EqualTo("xxxx"));
     }
 
     [Test]
-    [Ignore("Test skipped, as requested in the original code")]
+    //[Ignore("Test skipped, as requested in the original code")]
     public void GetValue_ShouldReturnAnswer() {
       // Arrange
       var input = "What's the meaning of it all?";
